@@ -1,2 +1,4 @@
 # sgd-error-bound-logreg
-Empirically verifying SGD's theoretical error bound for convex functions via logistic regression loss function.
+Empirically verifying SGD's theoretical error bound for convex functions via logistic regression loss function. \ 
+The theoretical error bound for convex functions can be found in the book by Shalev-Shwartz and Ben-David, *Understanding Machine Learning: From Theory to Algorithms*, Theorem 14.8. This repo contains a jupyter notebook which tests this error bound. To run the notebook, make sure you have latex and the following packages installed on your machine: amsmath, amssymb, bm, times. It is not a requirement, the code will still work properly even if you don't have the aforementioned things installed, but you'll have to remove or comment out the parts of the code that require latex and those packages to run. \ 
+The error bound is tested by training a binary logistic regression classifier using SGD. The loss function of this classifier is convex, allowing us to utilize the previously mentioned theorem. Data is sampled from two multivariate gaussians. 
